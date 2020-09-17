@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+
+<h1>Xgeeks Task</h1>
+
+{% endblock %}
+
+{% block body %}
+
+    <form action="/index" method="post">
+        <p>
+            <label> <h3>Please Input the Paint Object ID you wished to check</h3> </label>
+            <input type="number" name="id" placeholder="Id of your preffered paint" />
+        </p>
+        <p>
+            <label> <h3>Please Input the Paint Object ID you wished to check</h3> </label>
+            <input type="number" name="dimension" placeholder="Dimension of your wall">
+        </p>
+        <input class="btn btn-primary" type="submit" name="submit" value="submit">
+    </form>
+
+{% endif %}
+
+{% endblock %}
